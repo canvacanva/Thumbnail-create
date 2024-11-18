@@ -1,0 +1,1 @@
+powershell ./Launcher.ps1
