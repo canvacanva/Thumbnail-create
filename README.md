@@ -12,9 +12,9 @@ $canvasHeight = 150.0
 
 ### Run
 
-Edit source, destination and quality in file Launcher.ps1
-PS. Destination must must not be empty.
-Already imported images will skipped.
+Edit source, destination and quality in file Launcher.ps1  
+PS. Destination must must not be empty.  
+Already imported images will skipped.  
 
 
 ```
