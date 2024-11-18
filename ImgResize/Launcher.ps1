@@ -1,7 +1,11 @@
 ﻿$source = 'C:\Portable\ImgResize\images'
 $dest = 'C:\Portable\ImgResize\thumb'
-$source_list = get-childitem -path 'C:\Portable\ImgResize\images' -recurse
-$dest_list = get-childitem -Path 'C:\Portable\ImgResize\thumb' -recurse
+$quality = 100
+
+$source_list = get-childitem -path $source -recurse
+$dest_list = get-childitem -Path $dest -recurse
+
+
 	
 $source_test = Test-Path -Path $source\*
 $dest_test = Test-Path -Path $dest\*
@@ -25,6 +29,6 @@ echo $cObj
 if ($obj.sideindicator -ne "=="){
 echo "$($obj.InputObject.FullName)"
 echo "$($obj.InputObject)"
-      ./Resizer.ps1 $source\$($obj.InputObject) $dest\$($obj.InputObject) 100
+      ./Resizer.ps1 $source\$($obj.InputObject) $dest\$($obj.InputObject) $quality
 }
 }
