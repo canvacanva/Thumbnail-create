@@ -25,3 +25,9 @@ $quality = 100
 
 Run Launcher.ps1 or Converti IMG in THUMB.cmd
 
+
+# Thumbnail-create / Resize image (V2)
+Add processed path, file moved post-resized  
+
+# Compare - Move
+Only for check difference and clean filesystem.  
